@@ -14,19 +14,14 @@
   </ion-header> -->
 
   <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
-  <ion-img src="assets/images/top.png" alt="image1" width="100" height="80"></ion-img>
-  <ion-img src="assets/images/base.jpg" alt="image1" width="100" height="100"></ion-img>
+  <ion-img src="assets/images/top.png" alt="image1"></ion-img>
+  <ion-img src="assets/images/base.jpg" alt="image2"></ion-img>
   
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col *ngFor="let item of listMonth">
         <ion-img src="assets/images/aws_000.png" alt="image1" width="100" height="60"></ion-img>
-      </ion-col>
-      <ion-col>
-        <ion-img src="assets/images/aws_000.png" alt="image1" width="100" height="60"></ion-img>
-      </ion-col>
-      <ion-col>
-        <ion-img src="assets/images/aws_000.png" alt="image1" width="100" height="60"></ion-img>
+        <p>{{ item }}</p>
       </ion-col>
     </ion-row>
   </ion-grid>

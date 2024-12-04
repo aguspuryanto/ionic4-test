@@ -1,6 +1,11 @@
 ion-content{
     --background: #EFF6FD url('../../assets/images/base.jpg') no-repeat 100% 100%;
-    --color: #fff;
+    --color: #000;
+    text-align: center;
+}
+
+ion-img::part(image) {
+    height: auto;
 }
 
 .home {

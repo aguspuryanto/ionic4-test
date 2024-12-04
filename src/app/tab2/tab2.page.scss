@@ -3,4 +3,8 @@ ion-content{
     --color: #fff;
 }
 
+ion-img::part(image) {
+    height: 250px;
+}
+
 .image1 { margin-top: 80px; }
